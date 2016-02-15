@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/person_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/listitem_person_height"
+    android:elevation="10dp"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardBackgroundColor="@color/person_bg">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/profile_img_dimen"
+            android:layout_height="@dimen/profile_img_dimen"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/demo"/>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:text="Person one"
+                android:textSize="@dimen/fontSize_16"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/subtitle_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="3dp"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:text="Status Updates..."
+                android:textSize="@dimen/fontSize_12"/>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.CardView>
